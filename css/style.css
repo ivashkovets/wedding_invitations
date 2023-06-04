@@ -1,0 +1,180 @@
+@font-face {
+    font-family: Pacifico;
+    src: url("../fonts/Pacifico/Pacifico-Regular.ttf");
+}
+
+@font-face {
+    font-family: Nanum Myeongjo;
+    src: url("../fonts/Nanum_Myeongjo/NanumMyeongjo-Regular.ttf");
+}
+
+@font-face {
+    font-family: Cormorant Garamond;
+    scr: url("../fonts/Cormorant_Garamond/CormorantGaramond-Medium.ttf");
+}
+body{
+    background: #06302d;
+    /*background-image: url("../img/bg.jpg");*/
+    padding: 32px;
+    height: 100%;
+    margin: 0 !important;
+}
+
+h1{
+    font-size: 58px;
+    line-height: 60px;
+}
+
+h3{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+h2{
+    font-size: 50px;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+.pergament{
+    background: rgba(255, 255, 255, 0.4);
+    /*border: solid 1px #ffd700;*/
+}
+
+.header-content{
+    font-family: Pacifico;
+    /*color: #ffd700;*/
+    color: #144841;
+    /*color: #06302d;*/
+    text-align: center;
+}
+
+.timer__items {
+    display: flex;
+    font-size: 48px;
+    justify-content: center;
+}
+.timer__item {
+    position: relative;
+    min-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.timer__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 14px;
+}
+.timer__item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -15px;
+}
+
+.wedding-clock{
+    padding: 32px 0;
+    background: #06302d;
+    border-bottom: 3px solid #fff;
+    border-top: 3px solid #fff;
+    font-family: Nanum Myeongjo;
+    color: #fff;
+    text-align: center;
+}
+
+.title-invitation{
+    color: #144841;
+    font-family: Pacifico;
+    text-align: center;
+    font-size: 40px;
+}
+
+.text-invitation{
+    color: #144841;
+    font-family: Cormorant Garamond;
+    text-align: center;
+    font-size: 30px;
+}
+
+.waiting{
+    padding: 32px 0;
+    background: #06302d;
+    border-bottom: 3px solid #fff;
+    border-top: 3px solid #fff;
+    font-family: Cormorant Garamond;
+    color: #fff;
+}
+
+.wedding-schedule_title{
+    color: #144841;
+    font-family: Pacifico;
+    text-align: center;
+    font-size: 35px;
+}
+
+.standard-text{
+    font-size: 25px;
+    margin: 16px 0;
+}
+
+.time{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.adr{
+    font-style: italic;
+}
+
+.wedding-schedule{
+    padding: 32px 0;
+}
+
+.wedding-schedule_item{
+    display: flex;
+    font-size: 25px;
+    color: #fff;
+    margin: 8px 0;
+}
+
+.item-time{
+    margin-right: 16px;
+}
+
+.zags-map{
+    padding: 32px 0;
+    background: #06302d;
+    border-top: 3px solid #fff;
+    font-family: Pacifico;
+    color: #fff;
+    font-size: 30px;
+}
+
+.restaurant-map{
+    padding: 0 0 32px 0;
+    background: #06302d;
+    font-family: Pacifico;
+    color: #fff;
+    font-size: 30px;
+}
+
+.button-arrow{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    border-radius: 50%;
+    background: #06302d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 50px;
+}
+
+.button-arrow img{
+    width: 30px;
+}
